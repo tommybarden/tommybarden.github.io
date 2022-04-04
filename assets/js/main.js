@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -231,7 +231,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -283,5 +283,16 @@
       mirror: false
     });
   });
+
+
+  /**
+   * Services box toggles
+   */
+  on('click', '.icon-box a', function(e) {
+    //console.log(e, this.parentNode.classList.toggle('truncate'))
+    this.parentNode.classList.toggle('truncate')
+    //this.classList.toggle('bi-list')
+    //this.classList.toggle('bi-x')
+}, true)
 
 })()
