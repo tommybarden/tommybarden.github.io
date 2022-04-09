@@ -624,6 +624,11 @@ section {
   background-size: cover;
   padding: 60px 0;
 }
+
+.cta2 {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta2-bg.jpg") fixed center center;
+}
+
 .cta h3 {
   color: #fff;
   font-size: 28px;
@@ -900,6 +905,13 @@ section {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
 }
+
+.testimonials2 {
+  background: url("../img/testimonials2-bg.jpg") no-repeat;
+}
+
+
+/*
 .testimonials .section-header {
   margin-bottom: 40px;
 }
@@ -961,6 +973,7 @@ section {
   background-color: #BF0000;
   opacity: 1;
 }
+*/
 @media (min-width: 1024px) {
   .testimonials {
     background-attachment: fixed;
@@ -1348,9 +1361,14 @@ section {
 
 /******************/
 
-.truncate .content {
+.truncate .contents {
    display: -webkit-box;
    -webkit-line-clamp: 4;
    -webkit-box-orient: vertical;
    overflow: hidden;
+}
+
+.truncate .content p:not(:first-child) {
+   background: #ece;
+   display: none;
 }
